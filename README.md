@@ -25,24 +25,26 @@ This repository contains shell scripts for automated remote Linux server login a
 
 ## 📋 Usage
 
-# Basic login: login to remote server
-```bash
-bash login.sh
-```
-# Automated command execution: Enter following credentials in the script before execution
+# Automated command execution on remote server: 
+- Enter following credentials in the script before execution
 
 DEFAULT_USER=""
 DEFAULT_PORT=""
 DEFAULT_IP=""
 DEFAULT_PASS=""
 
-Then run the command execution script
+- Then run the command execution script
 ```bash
-bash run_commands_automatically.sh
+bash main.sh
 ```
-# Combined login and command execution
+# Test scripts
+
 ```bash
-bash run_commands_with_login.sh
+bash test_login_manually.sh # Enter credentials
+```
+
+```bash
+bash test_run_commands_with_manual_login.sh # Enter credentials and commands
 ```
 
 ## ⚠️ Security Note
