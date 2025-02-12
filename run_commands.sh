@@ -1,10 +1,27 @@
 #!/bin/bash
 
-# Server credentials
-server_host=""          # Replace with your server IP
-server_user=""          # Replace with your username
-server_pass=""          # Replace with your password
-server_port=""          # Replace with your port if different from 22
+# Default credentials
+DEFAULT_USER="root"
+DEFAULT_PORT="22"
+
+# Get server details with user input
+read -p "Enter server IP/hostname: " server_host
+while [[ -z "$server_host" ]]; do
+    read -p "Server IP/hostname cannot be empty. Please enter: " server_host
+done
+
+read -p "Enter username [$DEFAULT_USER]: " server_user
+server_user=${server_user:-$DEFAULT_USER}
+
+read -p "Enter port [$DEFAULT_PORT]: " server_port
+server_port=${server_port:-$DEFAULT_PORT}
+
+read -s -p "Enter server password: " server_pass
+while [[ -z "$server_pass" ]]; do
+    echo
+    read -s -p "Password cannot be empty. Please enter: " server_pass
+done
+echo
 
 # Define your commands here
 # Add or remove commands as needed
@@ -30,10 +47,10 @@ execute_remote_command() {
 }
 
 # Main execution
-echo "=== Remote Server Command Execution ==="
+echo -e "\n=== Remote Server Command Execution ==="
 echo "Server: $server_host"
-echo "User: $server_user"
-echo "Port: $server_port"
+echo "User: $server_user $([ "$server_user" == "$DEFAULT_USER" ] && echo "(default)")"
+echo "Port: $server_port $([ "$server_port" == "$DEFAULT_PORT" ] && echo "(default)")"
 
 # Show summary of commands to be executed
 echo -e "\nCommands to be executed:"

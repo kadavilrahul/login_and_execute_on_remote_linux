@@ -2,9 +2,9 @@
 
 # Default credentials
 DEFAULT_IP=""
-DEFAULT_USER=""
+DEFAULT_USER="root"
 DEFAULT_PASS=""
-DEFAULT_PORT=""
+DEFAULT_PORT="22"
 
 # Clear screen for better visibility
 clear
