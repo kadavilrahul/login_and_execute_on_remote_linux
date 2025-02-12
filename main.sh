@@ -43,5 +43,3 @@ fi
 
 echo -e "\nConnecting to $server_host as $server_user..."
 sshpass -p "$server_pass" ssh -o StrictHostKeyChecking=no -p "$server_port" "$server_user@$server_host"
-
-This is a test
