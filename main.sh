@@ -1,4 +1,6 @@
 #!/bin/bash
+# This script automates the execution of remote commands on a server using SSH.
+# It allows defining a list of commands and default server credentials, and executes the commands on the remote server.
 
 # Insert your credentials below before execution the script
 
