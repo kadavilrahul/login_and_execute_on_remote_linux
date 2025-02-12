@@ -26,7 +26,7 @@ This repository contains shell scripts for automated remote Linux server login a
 ## 📋 Usage
 
 # Automated command execution on remote server: 
-- Enter following credentials in the main.shscript before execution
+- Enter following credentials in the main.sh script before execution
 
 ```bash
 DEFAULT_USER=""
