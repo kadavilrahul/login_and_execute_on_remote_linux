@@ -28,10 +28,12 @@ This repository contains shell scripts for automated remote Linux server login a
 # Automated command execution on remote server: 
 - Enter following credentials in the script before execution
 
+```bash
 DEFAULT_USER=""
 DEFAULT_PORT=""
 DEFAULT_IP=""
 DEFAULT_PASS=""
+```
 
 - Then run the command execution script
 ```bash
