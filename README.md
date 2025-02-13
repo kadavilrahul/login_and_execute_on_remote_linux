@@ -25,7 +25,7 @@ This repository contains shell scripts for automated remote Linux server login a
 
 ## 📋 Usage
 
-# Automated command execution on remote server: 
+# Automated command execution on remote server:
 - Enter following credentials in the main.sh script before execution
 
 ```bash
@@ -59,7 +59,3 @@ bash test_run_commands_with_manual_login.sh # Enter credentials and commands
 ## 📝 License
 
 This project is open source and available under the MIT License.
-
-## ✍️ Author
-
-Rahul Kadavil
