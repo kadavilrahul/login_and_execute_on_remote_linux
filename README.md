@@ -60,4 +60,3 @@ bash test_run_commands_with_manual_login.sh # Enter credentials and commands
 
 This project is open source and available under the MIT License.
 
-This line is a test to verify git setup and GitHub connection.
